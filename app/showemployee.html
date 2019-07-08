@@ -1,0 +1,24 @@
+<h2>In Show Employee HTML........</h2>
+
+<h2>Show All Employee</h2>
+<table border='1'>
+    <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Employee Salary</th>
+        <th colspan='2'><font align="centre">Action</font></th>
+    </tr>
+    <tr *ngFor="let data of child;let i=index">
+        <td>
+            {{data.empId}}
+        </td>
+        <td>
+            {{data.empName}}
+        </td>
+        <td>
+            {{data.empSalary}}
+        </td>
+        
+        
+    </tr>
+</table>
